@@ -29,3 +29,13 @@ img {
   font-size: 22px;
   font-family: sans-serif;
 }
+
+/* cursor */
+/* League Of Legends Pointer - https://www.cursors-4u.com/cursor/league-of-legends-pointer */
+* {
+  cursor:
+    url("https://cdn.cursors-4u.net/previews/league-of-legends-pointer-db2baa3d-32.webp")
+      32 32,
+    auto !important;
+}
+/* End www.Cursors-4U.com Code */
