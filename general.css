@@ -1,0 +1,31 @@
+/* body */
+.body {
+  background: url("/img/bg/1.gif");
+}
+
+/* gerais */
+.container {
+  max-width: 900px;
+  margin: 10px auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.sub-titulo {
+  font-size: 32px;
+  font-family: Poppins;
+  text-align: center;
+}
+
+.paragrafo {
+  line-height: 1.1;
+  font-size: 22px;
+  font-family: sans-serif;
+}

@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-img img {
+  max-width: 100%;
+  display: block;
+}
+
+.header-nav ul {
+  display: flex;
+  gap: 16px;
+}
