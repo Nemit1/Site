@@ -1,81 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matheus Henrique de Souza - 5173960</title>
-  <meta name="description" content="Um site sobre jogos.">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Jogos</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #111;
+      color: #eee;
+    }
+
+    header {
+      background: #222;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #0af;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2,
+    h3 {
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: #1c1c1c;
+      padding: 15px;
+      border-radius: 10px;
+      width: 220px;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    dl {
+      margin-top: 10px;
+    }
+
+    dt {
+      font-weight: bold;
+      color: #0af;
+      margin-top: 10px;
+    }
+
+    dd {
+      margin-left: 15px;
+      margin-bottom: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    thead {
+      background: #333;
+    }
+
+    tbody tr:hover {
+      background: #222;
+    }
+
+    tfoot {
+      background: #222;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
-<body class="body">
+<body>
 
-  <div class="container">
+  <header>
+    <h1>Jogos Clássicos</h1>
+    <nav>
+      <ul>
+        <li><a href="#jogos">Jogos</a></li>
+        <li><a href="#lista">Listas</a></li>
+        <li><a href="#tabela">Tabela</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header class="header">
-      <nav class="header-nav">
-        <ul>
-          <li> <a href="/index.html">Index</a> </li>
-          <li> <a href="/about.html">About</a> </li>
-          <li> <a href="/games.html">Games</a> </li>
-        </ul>
-      </nav>
-    </header>
+  <section id="jogos">
+    <h2>Jogos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Tibia</h3>
+        <p>MMORPG clássico com mundo aberto e PvP intenso.</p>
+      </div>
+      <div class="card">
+        <h3>Ragnarok Online</h3>
+        <p>Famoso por seu sistema de classes e mapas icônicos.</p>
+      </div>
+      <div class="card">
+        <h3>World of Warcraft</h3>
+        <p>Um dos MMORPGs mais populares da história.</p>
+      </div>
+      <div class="card">
+        <h3>Monster Hunter</h3>
+        <p>Caça de monstros com foco em cooperação.</p>
+      </div>
+    </div>
+  </section>
 
-    <main>
-      <section>
-        <div class="games">
-          <h2 class="sub-titulo">Tibia</h2>
-          <img src="/img/games/2.jpg" alt="">
-          <p class="paragrafo">Tibia é um jogo eletrônico de RPG multijogador gratuito, desenvolvido pela CipSoft. Criado em 1997, é um dos jogos mais antigos do gênero.</p>
-          <dl class="definicao">
-            <dt>Tibia - Knight</dt>
-            <dd>Vocação focada em combate corpo a corpo com alta defesa e resistência.</dd>
-            <dt>Tibia - Sorcerer</dt>
-            <dd>Especialista em magias ofensivas com grande dano à distância.</dd>
-        </div>
-        <div class="games">
-          <h2 class="sub-titulo">Monster Hunter</h2>
-          <img src="/img/games/1.jpg" alt="">
-          <p class="paragrafo">Lançado para PS2 em 2004, Monster Hunter é o título inaugural da famosa franquia da Capcom, conhecido por sua alta dificuldade, ritmo lento e controles únicos, onde o analógico direito controla os ataques. Focado no combate tático e na preparação, o jogo original e sua expansão, Monster Hunter G, exigem paciência e gestão de recursos.</p>
-          <dl>
-            <dt>Monster Hunter - Rathalos</dt>
-            <dd>Wyvern voador conhecido por ataques de fogo e domínio aéreo.</dd>
-            <dt>Monster Hunter - Nergigante</dt>
-            <dd>Dragão ancião agressivo que regenera espinhos durante a batalha.</dd>
-          </dl>
-        </div>
-        <div class="games">
-          <h2 class="sub-titulo">Ragnarok Online</h2>
-          <img src="/img/games/3.jpg" alt="">
-          <p class="paragrafo">Ragnarök Online é um MMORPG desenvolvido pela empresa sul-coreana Gravity Corp. Os cenários do jogo foram baseados, inicialmente, no manhwa Ragnarök de Lee Myung-Jin. Ragnarök Online foi o primeiro jogo online coreano a ser exportado com sucesso a outros países.</p>
-          <dl>
-            <dt>Ragnarok - Knight</dt>
-            <dd>Classe avançada com grande força física e habilidades de montaria.</dd>
-            <dt>Ragnarok - Wizard</dt>
-            <dd>Mago poderoso com magias elementais de grande área.</dd>
-          </dl>
-        </div>
-        <div class="games">
-          <h2 class="sub-titulo">World of Warcraft</h2>
-          <img src="/img/games/4.jpg" alt="">
-          <p class="paragrafo">World of Warcraft é um jogo on-line do gênero MMORPG, desenvolvido e distribuído pela produtora Blizzard Entertainment e lançado em 2004. O jogo se passa no mundo fantástico de Azeroth, introduzido no primeiro jogo da série, Warcraft: Orcs & Humans, lançado em 1994.</p>
-          <dl>
-            <dt>WoW - Paladin</dt>
-            <dd>Classe híbrida que usa magia sagrada para curar e causar dano.</dd>
-            <dt>WoW - Rogue</dt>
-            <dd>Especialista em furtividade, ataques rápidos e alto dano crítico.</dd>
-          </dl>
-        </div>
-      </section>
-    </main>
+  <section id="lista">
 
-    <footer class="footer">
-      <span>Nemit</span>
-    </footer>
+    <h3>Catálogos</h3>
+    <ol>
+      <li>Tibia</li>
+      <li>Ragnarok Online</li>
+      <li>World of Warcraft</li>
+      <li>Monster Hunter</li>
+    </ol>
 
-  </div>
+    <h3>Mais detalhes:</h3>
+
+    <dl>
+      <dt>Tibia</dt>
+      <dd>Jogo antigo com visão top-down e foco em grind.</dd>
+
+      <dt>Ragnarok Online</dt>
+      <dd>MMORPG com estilo anime e sistema de classes.</dd>
+
+      <dt>World of Warcraft</dt>
+      <dd>MMO da Blizzard com grande mundo e raids.</dd>
+
+      <dt>Monster Hunter</dt>
+      <dd>Jogo focado em caçar monstros e crafting.</dd>
+    </dl>
+  </section>
+
+  <section id="tabela">
+
+    <h2>Tabela Comparativa</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Jogo</th>
+          <th>Gênero</th>
+          <th>Ano</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tibia</td>
+          <td>MMORPG</td>
+          <td>1997</td>
+        </tr>
+        <tr>
+          <td>Ragnarok Online</td>
+          <td>MMORPG</td>
+          <td>2002</td>
+        </tr>
+        <tr>
+          <td>World of Warcraft</td>
+          <td>MMORPG</td>
+          <td>2004</td>
+        </tr>
+        <tr>
+          <td>Monster Hunter</td>
+          <td>Ação/RPG</td>
+          <td>2004</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Tabela de jogos clássicos</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <footer>
+    <p>Feito para estudo - 31/03/2026</p>
+  </footer>
 
 </body>
 
