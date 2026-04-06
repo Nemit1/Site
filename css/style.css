@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #111;
+  color: #eee;
+}
+
+header {
+  background: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #0af;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2,
+h3 {
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+ol {
+  padding-left: 20px;
+}
+
+dl {
+  margin-top: 10px;
+}
+
+dt {
+  font-weight: bold;
+  color: #0af;
+  margin-top: 10px;
+}
+
+dd {
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: center;
+}
+
+thead {
+  background: #333;
+}
+
+tbody tr:hover {
+  background: #222;
+}
+
+tfoot {
+  background: #222;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  margin-top: 20px;
+}
+
+.main_links {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 400px;
+}
+
+.h1_links {
+  text-align: center;
+}
+
+.main-fotos {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mh-galeria {
+  display: flex;
+  gap: 30px;
+}
+
+.mh-galeria img {
+  display: block;
+  max-width: 300px;
+}
+
+#tabela {
+  height: 450px;
+}
+
+.main_contato {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 400px;
+}
+
+.formulario {
+  display: inline-block;
+}
+
+.formulario_input {
+  margin-bottom: 22px;
+}
+
+.formulario_inputf {
+  display: flex;
+  align-items: center;
+}
